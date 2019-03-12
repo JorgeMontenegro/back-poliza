@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const config = process.env.MONGODB_URI || 'mongodb://localhost:27017/alunideas';
+const config = process.env.MONGODB || 'mongodb://localhost:27017/alunideas';
 const port = process.env.PORT || 8081
 
 
