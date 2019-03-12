@@ -4,7 +4,7 @@
   "description": "versión de prueba",
   "main": "app.js",
   "scripts": {
-	"start":"node server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "monte07jul@hotmail.com",
@@ -16,6 +16,7 @@
     "mongodb": "^3.1.13",
     "mongoose": "^5.4.9",
     "msnodesqlv8": "^0.6.12",
-    "mssql": "^4.3.1"
+    "mssql": "^4.3.1",
+    "mysql": "^2.16.0"
   }
 }
