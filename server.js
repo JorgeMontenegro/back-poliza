@@ -6,7 +6,7 @@ const config = process.env.MONGODB_URI || 'mongodb://localhost:27017/alunideas';
 const port = process.env.PORT || 8081
 
 
-let userRouters = require('./routers/userRouters.js');
+//let userRouters = require('./routers/userRouters.js');
 let policyRouters = require('./routers/policyRouters.js');
 
 let allowCrossDomain = function(req, res, next) {
@@ -17,13 +17,13 @@ let allowCrossDomain = function(req, res, next) {
     next();
 };
 
-mongoose.connect(config);
+//mongoose.connect(config);
 
 app.use(allowCrossDomain);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/user', userRouters);
+//app.use('/user', userRouters);
 app.use('/policy', policyRouters);
 
 app.listen(port);
