@@ -1,22 +1,15 @@
-﻿const express = require('express');
+const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const config = process.env.MONGODB_URI || 'mongodb://localhost:27017/alunideas';
+<<<<<<< HEAD
+const config = process.env.MONGODB || 'mongodb://localhost:27017/alunideas';
+=======
+const config = process.env.MONGODB || 'mongodb://montenegro:axzjqACeV36GTNL@mongodb/alunideas';
+>>>>>>> 17bcc8c515142bcad49c4690733401a886bacb99
 const port = process.env.PORT || 8081
-var mysql = require('mysql');
 
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: ""
-});
-
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected!");
-});
-
+//contraseña:axzjqACeV36GTNL  user:montenegro
 //let userRouters = require('./routers/userRouters.js');
 let policyRouters = require('./routers/policyRouters.js');
 
